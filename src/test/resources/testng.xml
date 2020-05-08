@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite" parallel="tests" thread-count="2">
+    <test name="test Divide 1">
+        <classes>
+            <class name="DivideTest"/>
+            <parameter name="a" value="6.6"></parameter>
+            <parameter name="b" value="2"></parameter>
+            <parameter name="expectedDiv" value="3.3"></parameter>
+        </classes>
+    </test> <!-- Test -->
+    <test name="test Divide 2">
+        <classes>
+            <class name="DivideTest"/>
+            <parameter name="a" value="1"></parameter>
+            <parameter name="b" value="4"></parameter>
+            <parameter name="expectedDiv" value="0.25"></parameter>
+        </classes>
+    </test> <!-- Test -->
+    <test name="test Sub Test">
+        <classes>
+            <class name="SubTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite>
